@@ -20,37 +20,43 @@
   </head>
 
   <body>
-    <header class="header-box">
-      <div class="header container">
+    <header class="header">
+      <div class="header__logo container">
         <a href="./index.html"
-          ><span class="logo-web-top">Web</span
-          ><span class="logo-studio-top">Studio</span></a
+          ><span class="header__logo-web-top">Web</span
+          ><span class="header__logo-studio-top">Studio</span></a
         >
         <nav>
-          <ul class="navigation-links">
+          <ul class="navigation">
             <li>
-              <a class="agency-nav is-hidden" href="./index.html">Agencja</a>
+              <a class="navigation__agency-nav is-active" href="./index.html"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a class="portfolio-nav is-active" href="./portfolio.html"
+              <a
+                class="navigation__portfolio-nav is-hidden"
+                href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li><a class="contact-nav is-hidden" href="#">Kontakt</a></li>
+            <li>
+              <a class="navigation__contact-nav is-hidden" href="#">Kontakt</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact">
-          <li class="mail-area">
+          <li class="contact__mail-area">
             <a href="mailto:info@devstudio.com">
-              <svg class="svg-contact-mail">
+              <svg class="contact__svg-mail">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="phone-area">
+          <li class="contact__phone-area">
             <a href="tel:+48111111111">
-              <svg class="svg-contact-phone">
+              <svg class="contact__svg-phone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
