@@ -12,10 +12,14 @@ $projects-section-overlay-color: rgba(33, 150, 243, 0.9);
 $backdrop-color: rgba(0, 0, 0, 0.2);
 $cursor: pointer;
 $delay: 250ms;
+// modal
+$modal-input-width: 448px;
+$modal-border-radius: 4px;
+// modal icons
+$icon-width: 18px;
+$icon-height: 18px;
 
-
-@mixin transition($duration, $timing-function){
+@mixin transition($duration, $timing-function) {
   transition-duration: $duration;
   transition-timing-function: $timing-function;
 }
-

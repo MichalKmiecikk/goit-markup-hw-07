@@ -4,48 +4,47 @@
   margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.clients-section__title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.03;
-  margin-bottom: 50px;
-}
-.clients-section__image-box {
-  display: flex;
-  justify-content: center;
-  width: 1170px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  fill: $svg-icons-color;
-}
-.clients-section__image-card:not(:last-child) {
-  margin-right: 30px;
-}
-.clients-section__image-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition-property: border, fill, box-shadow, border-radius;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
-}
-.clients-section__image-card:hover,
-.clients-section__image-card:focus,
-.clients-section__image-card:active {
-  border: 1px solid $selection-color;
-  fill: $selection-color;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  cursor: $cursor;
-}
-
-.clients-section__image {
-  width: 106px;
-  height: 60px;
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03;
+    margin-bottom: 50px;
+  }
+  &__image-box {
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    fill: $svg-icons-color;
+  }
+  &__image-card:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__image-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition-property: border, fill, box-shadow, border-radius;
+    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+  &__image-card:hover,
+  &__image-card:focus,
+  &__image-card:active {
+    border: 1px solid $selection-color;
+    fill: $selection-color;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    cursor: $cursor;
+  }
+  &__image {
+    width: 106px;
+    height: 60px;
+  }
 }

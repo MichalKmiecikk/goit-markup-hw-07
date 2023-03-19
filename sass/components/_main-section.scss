@@ -18,18 +18,19 @@
   background-size: cover;
   max-width: 1600px;
   max-height: 600px;
-}
-.main-section__title.container {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06;
-  text-transform: uppercase;
-  color: $main-white;
-  width: auto;
+
+  &__title.container {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06;
+    text-transform: uppercase;
+    color: $main-white;
+    width: auto;
+  }
 }

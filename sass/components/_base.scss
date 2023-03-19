@@ -19,7 +19,9 @@ footer {
   background-color: $footerbackground-color;
   width: auto;
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   width: 1200px;
   margin-left: auto;
