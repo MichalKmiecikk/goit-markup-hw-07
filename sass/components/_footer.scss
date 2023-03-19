@@ -27,7 +27,8 @@
     text-decoration: none;
     color: $main-white;
     transition-property: color;
-    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+      transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   }
   &__site:hover,
   &__site:focus,
@@ -38,7 +39,8 @@
     color: $text-color;
     text-decoration: none;
     transition-property: color;
-    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+      transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
     font-size: 14px;
     line-height: 1.71;
   }
@@ -84,7 +86,8 @@
     fill: $main-white;
     border-radius: 50%;
     transition-property: background-color, fill, box-shadow, border-radius;
-    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+      transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   }
   &__social-box:hover,
   &__social-box:focus,

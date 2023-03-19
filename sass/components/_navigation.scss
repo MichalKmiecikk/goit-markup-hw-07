@@ -11,7 +11,6 @@
   position: relati;
 }
 
-
 .navigation a {
   color: $text-color;
   text-decoration: none;
@@ -21,7 +20,8 @@
   letter-spacing: 0.02;
   position: relative;
   transition-property: color;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 .navigation a:hover,
 .navigation a:focus,
@@ -95,7 +95,8 @@
   line-height: 1.14;
   letter-spacing: 0.02;
   transition-property: fill, color;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .contact a:hover,

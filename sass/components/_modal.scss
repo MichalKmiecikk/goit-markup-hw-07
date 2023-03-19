@@ -14,7 +14,8 @@
   transition-property: opacity, visibility, transform;
   transition-delay: $delay;
   transform: scale(1);
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
 
   &.is-hidden,
   &.modal.is-hidden {
@@ -39,7 +40,8 @@
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition-property: opacity, visibility, transform;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   transition-delay: $delay;
   transform: scale(1);
 
@@ -83,7 +85,8 @@
     bottom: 11px;
     left: 12px;
     transition: fill;
-    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+      transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   }
 
   &__form-textarea {
@@ -107,41 +110,43 @@
   &__input {
     width: $modal-input-width;
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: $modal-border;
     border-radius: $modal-border-radius;
     padding-left: 42px;
     transition-property: border-color, fill;
-    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+      transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   }
   &__input:focus {
     outline: none;
     border-color: $selection-color;
   }
-  &__input:focus + &__icon-human,
-  &__input:focus + &__icon-email,
-  &__input:focus + &__icon-phone {
+  &__input-textarea:focus {
+    outline: none;
+    border-color: $selection-color;
+  }
+  &__input:focus + .modal__icon-human,
+  &__input:focus + .modal__icon-email,
+  &__input:focus + .modal__icon-phone {
     fill: $selection-color;
   }
   &__input-textarea {
     width: $modal-input-width;
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: $modal-border;
     border-radius: $modal-border-radius;
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
-    line-height: 1$modal-border-radius;
+    line-height: $modal-border-radius;
     letter-spacing: 0.01em;
     text-align: left;
     align-items: center;
     padding: 12px 16px;
     resize: none;
     transition-property: border-color;
-    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
-  }
-  &__input-textarea:focus {
-    outline: none;
-    border-color: $selection-color;
+      transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   }
 }
 /* end - order-form */

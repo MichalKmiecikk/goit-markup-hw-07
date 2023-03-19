@@ -86,7 +86,8 @@
     fill: rgba(175, 177, 184, 1);
     border-radius: 50%;
     transition-property: background-color, fill, box-shadow, border-radius;
-    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
   }
   &__social-item {
     width: 20px;

@@ -33,7 +33,8 @@
     top: 4px;
     cursor: $cursor;
     transition: visibility;
-    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+      transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   }
   &__reg {
     text-decoration: underline;

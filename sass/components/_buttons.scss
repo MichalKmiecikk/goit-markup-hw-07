@@ -40,7 +40,8 @@
   background-color: $selection-color;
   color: $main-white;
   transition-property: border, box-shadow, cursor;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus,
@@ -65,7 +66,8 @@
   margin-right: 8px;
   background-color: $teamsectionbackgroundn-color;
   transition-property: box-shadow, color, background-color;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus,
@@ -89,7 +91,8 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $main-white;
   transition-property: border, background-color, box-shadow, cursor, color;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   &:hover,
   &:focus,
   &:active {
@@ -118,7 +121,8 @@
   border: none;
   background-color: $selection-color;
   transition-property: border, box-shadow;
-  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
   &:hover,
   &:focus,
   &:active {
