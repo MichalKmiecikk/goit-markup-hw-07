@@ -1,0 +1,38 @@
+// logo-top
+.logo-web-top,
+.logo-studio-top {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03;
+}
+.logo-studio-top {
+  color: $logo-black;
+}
+.logo-web-top {
+  color: $selection-color;
+}
+// end logo top 
+/* logo-bottom */
+.whole-footer .logo-web-bottom,
+.whole-footer .logo-studio-bottom {
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.footer-area > a {
+  text-decoration: none;
+}
+.logo-web-bottom {
+  color: $selection-color;
+}
+.logo-studio-bottom {
+  color: $main-white;
+}
+
+/* end - logo bottom */

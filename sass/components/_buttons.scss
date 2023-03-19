@@ -1,0 +1,128 @@
+// main-button 
+.main-button {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06;
+  text-align: center;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid $selection-color;
+  color: $main-white;
+  background-color: $selection-color;
+}
+.main-button:hover,
+.main-button:focus,
+.main-button:active {
+  cursor: $cursor;
+}
+// end main button 
+
+
+// footer-newsletter-button
+.newsletter-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 4px;
+  border: 1px solid #0000001a;
+  width: 200px;
+  height: 50px;
+  padding-left: 42px;
+  background-color: $selection-color;
+  color: $main-white;
+  transition-property: border, box-shadow, cursor;
+  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+}
+.newsletter-button:hover,
+.newsletter-button:focus,
+.newsletter-button:active {
+  border: 1px solid #080c0f;
+  box-shadow: 0px 4px 4px 0px #ffffff;
+  cursor: $cursor;
+}
+// /* end newsletter - form */
+
+// projects-button
+.projects-button[type="button"] {
+  cursor: $cursor;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 6px 22px;
+  border: 0px;
+  border-radius: 4px;
+  margin-right: 8px;
+  background-color: $teamsectionbackgroundn-color;
+  transition-property: box-shadow, color, background-color;
+  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+}
+.projects-button[type="button"]:hover,
+.projects-button[type="button"]:focus,
+.projects-button[type="button"]:active {
+  color: $main-white;
+  background-color: $selection-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+// end-projects-button
+
+/* modal button */
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $main-white;
+  transition-property: border, background-color, box-shadow, cursor, color;
+  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+}
+.modal__close-btn:hover,
+.modal__close-btn:focus,
+.modal__close-btn:active {
+  color: $main-white;
+  background-color: $selection-color;
+  border: 1px solid $main-white;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: $cursor;
+}
+/* end - modal-button */
+/* form button  */
+.form-button {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: $main-white;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  cursor: $cursor;
+  background-color: $selection-color;
+  transition-property: border, box-shadow;
+  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+}
+.form-button:hover,
+.form-button:focus,
+.form-button:active {
+  border: 1px solid $selection-color;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: $cursor;
+}
+/* end-form button  */
