@@ -33,8 +33,8 @@
     top: 4px;
     cursor: $cursor;
     transition: visibility;
-      transition-duration: $transition-duration;
-  transition-timing-function: $timing-function;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
   }
   &__reg {
     text-decoration: underline;
@@ -55,3 +55,5 @@
     z-index: 1;
   }
 }
+
+

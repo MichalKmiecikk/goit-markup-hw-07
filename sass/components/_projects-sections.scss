@@ -40,8 +40,8 @@
     margin: 0px;
     border-bottom: 1px solid #eeeeee;
     transition-property: box-shadow, border;
-      transition-duration: $transition-duration;
-  transition-timing-function: $timing-function;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
   }
   &__card:hover &__overlay {
     transform: translateY(0%);
@@ -96,8 +96,8 @@
     background: $projects-section-overlay-color;
     color: $main-white;
     transform: translateY(100%);
-      transition-duration: $transition-duration;
-  transition-timing-function: $timing-function;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
   }
   &__overlay > p {
     font-size: 18px;
