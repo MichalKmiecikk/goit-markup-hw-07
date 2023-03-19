@@ -20,7 +20,7 @@
   letter-spacing: 0.02;
   position: relative;
   transition-property: color;
-  transition-duration: $duration;
+  transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
 }
 .navigation a:hover,
@@ -95,7 +95,7 @@
   line-height: 1.14;
   letter-spacing: 0.02;
   transition-property: fill, color;
-  transition-duration: $duration;
+  transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
 }
 

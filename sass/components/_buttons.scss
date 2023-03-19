@@ -1,4 +1,4 @@
-@button-common {
+%button-common {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -14,27 +14,27 @@
   transition-timing-function: $timing-function;
   cursor: $cursor;
 }
-@button-hover {
+%button-hover {
   border: 1px solid #080c0f;
   box-shadow: 0px 4px 4px 0px #ffffff;
   cursor: $cursor;
 }
 // main-button
 .main-button {
-  @extend @button-common;
+  @extend %button-common;
   padding-top: 10px;
   padding-bottom: 10px;
   &:hover,
   &:focus,
   &:active {
-    @extend @button-hover;
+    @extend %button-hover;
   }
 }
 // end main button
 
 // footer-newsletter-button
 .newsletter-button {
-  @extend @button-common;
+  @extend %button-common;
   position: absolute;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
   &:hover,
   &:focus,
   &:active {
-    @extend @button-hover;
+    @extend %button-hover;
   }
 }
 // /* end newsletter - form */
@@ -103,14 +103,14 @@
 /* end - modal-button */
 /* form button  */
 .form-button {
-  @extend @button-common;
+  @extend %button-common;
   display: block;
   justify-content: center;
   border: none;
   &:hover,
   &:focus,
   &:active {
-    @extend @button-hover;
+    @extend %button-hover;
   }
 }
 /* end-form button  */
